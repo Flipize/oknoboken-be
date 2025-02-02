@@ -8,7 +8,6 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@PropertySource("classpath:application.properties")
 public class CorsConfig {
 
     @Value("${frontend.url}")
