@@ -15,10 +15,10 @@ public class SubscriptionController {
     }
 
     @PostMapping("/add")
-    public Map<String, Object> handlePostRequest(@RequestBody String email) {
+    public Map<String, Object> handlePostRequest(@RequestBody Subscription subscription) {
         // Process the data (you can save it to a database, etc.)
 
-        return subscriptionService.subscribe(email);
+        return subscriptionService.subscribe(subscription);
     }
 
     @DeleteMapping("/remove")

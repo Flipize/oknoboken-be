@@ -17,8 +17,8 @@ public class SubscriptionService {
     private String filename;
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    public Map<String, Object> subscribe(String email) {
-        Subscription subscription = new Subscription(email);
+    public Map<String, Object> subscribe(Subscription subscription) {
+        String email = subscription.getEmail();
         Map<String, Object> response = new HashMap<>();
         boolean success;
         List<Subscription> subscriptions = readSubscribers();
