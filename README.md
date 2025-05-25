@@ -1,4 +1,5 @@
-This is the backend application for oknoboken-fe https://github.com/Flipize/oknoboken-fe
+This is the backend application for oknoboken-fe https://github.com/Flipize/oknoboken-fe.
+
 The purpose of this application is mainly to serve images to the front end application, and to handle messages submitted on the front end.
 
 Prerequisities to run this application:
