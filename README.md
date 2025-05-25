@@ -5,7 +5,7 @@ Prerequisities to run this application:
 
 A properties file called application.properties, which should include following properties:
 
-```json
+```properties
 frontend.url=<url to the frontend web application>
 image.dir=<path to a directory for images>
 images.json=<path to a json file where images filenames and image descriptions are specified>
@@ -14,7 +14,7 @@ subscription.dir=<path to a json file that hold subscribed users> (property name
 ```
 
 Example content of application.properties:
-```json
+```properties
 frontend.url=https://lizettavonsmil.se
 image.dir=/opt/oknoboken/oknoboken-be/images
 images.json=/opt/oknoboken/oknoboken-be/images.json
