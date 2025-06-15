@@ -12,15 +12,20 @@ image.dir=<path to a directory for images>
 images.json=<path to a json file where images filenames and image descriptions are specified>
 message.dir=<path to a directory where messages will be stored>
 subscription.dir=<path to a json file that hold subscribed users> (property name will be changed to reflect that it is a file and not directory)
+orders.dir=<path to directory to store order json files>
 ```
 
 Example content of application.properties:
 ```properties
-frontend.url=https://lizettavonsmil.se
-image.dir=/opt/oknoboken/oknoboken-be/images
-images.json=/opt/oknoboken/oknoboken-be/images.json
-message.dir=/opt/oknoboken/oknoboken-be/messages/
-subscription.dir=/opt/oknoboken/oknoboken-be/subscriptions.json
+spring.application.name=oknoboken-be
+
+## Custom properties
+frontend.url=http://localhost:5173
+image.dir=C:/Users/Filip/oknoboken-be-stuff/images
+images.json=C:/Users/Filip/oknoboken-be-stuff/images.json
+message.dir=C:/Users/Filip/oknoboken-be-stuff/messages/
+subscription.dir=C:/Users/Filip/oknoboken-be-stuff/subscriptions.json
+orders.dir=C:/Users/Filip/oknoboken-be-stuff/orders/
 ```
 The images.json file should contain the file names and descriptions of the images you want to show in the gallery on the website.
 
