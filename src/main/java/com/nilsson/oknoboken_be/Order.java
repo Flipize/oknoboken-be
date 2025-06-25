@@ -9,11 +9,13 @@ public class Order {
     private String postalCode;
     private String city;
     private String phoneNumber;
+    private String bookAmount;
 
     public Order() {
     }
 
-    public Order(String email, String deliveryMethod, String message, String address, String postalCode, String city, String phoneNumber, String name) {
+    public Order(String name, String email, String deliveryMethod, String message, String address, String postalCode, String city, String phoneNumber, String bookAmount) {
+        this.name = name;
         this.email = email;
         this.deliveryMethod = deliveryMethod;
         this.message = message;
@@ -21,7 +23,7 @@ public class Order {
         this.postalCode = postalCode;
         this.city = city;
         this.phoneNumber = phoneNumber;
-        this.name = name;
+        this.bookAmount = bookAmount;
     }
 
     public String getName() {
@@ -88,6 +90,14 @@ public class Order {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getBookAmount() {
+        return bookAmount;
+    }
+
+    public void setBookAmount(String bookAmount) {
+        this.bookAmount = bookAmount;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -99,6 +109,7 @@ public class Order {
                 ", postalCode='" + postalCode + '\'' +
                 ", city='" + city + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", bookAmount='" + bookAmount + '\'' +
                 '}';
     }
 }
