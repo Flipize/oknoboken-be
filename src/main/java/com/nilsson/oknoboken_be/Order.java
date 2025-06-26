@@ -10,11 +10,12 @@ public class Order {
     private String city;
     private String phoneNumber;
     private String bookAmount;
+    private String totalPrice;
 
     public Order() {
     }
 
-    public Order(String name, String email, String deliveryMethod, String message, String address, String postalCode, String city, String phoneNumber, String bookAmount) {
+    public Order(String name, String email, String deliveryMethod, String message, String address, String postalCode, String city, String phoneNumber, String bookAmount, String totalPrice) {
         this.name = name;
         this.email = email;
         this.deliveryMethod = deliveryMethod;
@@ -24,6 +25,7 @@ public class Order {
         this.city = city;
         this.phoneNumber = phoneNumber;
         this.bookAmount = bookAmount;
+        this.totalPrice = totalPrice;
     }
 
     public String getName() {
@@ -98,6 +100,14 @@ public class Order {
         this.bookAmount = bookAmount;
     }
 
+    public String getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(String totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
@@ -110,6 +120,7 @@ public class Order {
                 ", city='" + city + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", bookAmount='" + bookAmount + '\'' +
+                ", totalPrice='" + totalPrice + '\'' +
                 '}';
     }
 }
